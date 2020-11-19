@@ -85,11 +85,11 @@ export default class CreateExercise extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className='form-group'>
                         <label>Username:</label>
-                        <select ref="userInput"
+                        <select 
                             required
                             className="form-control"
                             value={this.state.username}
-                            onChange={this.onChangeUserName}>
+                            onChange={this.onChangeUsername}>
                             {
                                 this.state.users.map(function(user){
                                     return <option 
